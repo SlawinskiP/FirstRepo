@@ -1,5 +1,14 @@
 print("SIMPLE CALCULATOR")
+operation = input("Choose operation:\n"
+                  "1. Addition:\n"
+                  "2. Subtraction:\n")
 num1 = float(input("Enter first number: "))
 num2 = float(input("Enter second number: "))
-result = num1 + num2
-print("Result: ", result)
+if operation == "1":
+    result = num1 + num2
+    print("Result: ", result)
+elif operation == "2":
+    result = num1 - num2
+    print("Result: ", result)
+else:
+    print("Wrong operation!")
